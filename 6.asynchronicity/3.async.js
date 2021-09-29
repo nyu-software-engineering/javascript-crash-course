@@ -5,9 +5,9 @@ let getFive = async () => {
   // generate a random number between 0-10
   const rand = parseInt(Math.random() * 10)
 
-  // if it's a 5, return that
+  // if it's a 5, return that.  The Promise will be resolved.
   if (rand == 5) return rand
-  // if it's any other number, throw an error!
+  // if it's any other number, throw an error!  The Promise will be rejected.
   else throw rand
 }
 
