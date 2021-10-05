@@ -1,4 +1,4 @@
-// note that there are 3rd-party modules that make calling APIs easier
+// note that there are 3rd-party modules, such as axios, that make calling APIs easier
 
 const https = require("https") // using Node's built-in http module for http requests
 const apiUrl = "https://my.api.mockaroo.com/animals.json?key=d9ddfc40" // a mock-API for demo purposes that returns a JSON array of objects

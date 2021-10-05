@@ -1,27 +1,18 @@
-// a function that explicitly returns a Promise
-let getFive = () => {
+const doSomething = () => {
   return new Promise((resolve, reject) => {
-    // generate a random number between 0-10
-    const rand = parseInt(Math.random() * 10)
-
-    // if it's a 5, call the success callback function
-    if (rand == 5) resolve(rand)
-    // if it's any other number, call the failure callback function
-    else reject(rand)
+    const num = Math.random() * 10
+    const allisgood = num > 5 ? true : false
+    if (allisgood) resolve("number greater than 5!")
+    else reject("number was less than or equal to 5")
   })
 }
 
-// show that we're starting the code
-console.log("Starting")
-
-// call the function, pass functions to handle its success or failure, whenever it completes
-getFive()
-  .then(res => {
-    console.log(`Success - the number is ${res}`)
+doSomething()
+  .then(msg => {
+    // doSomethign ran successfully
+    console.log(`success!: ${msg}`)
   })
   .catch(err => {
-    console.log(`Failure - the number is ${err}`)
+    // doSomething ran unsuccessfully
+    console.log(`failure!: ${err}`)
   })
-
-// show that we're ending the code
-console.log("Ending")
