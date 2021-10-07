@@ -8,7 +8,7 @@
 const axios = require("axios") // import axios module
 
 // a mock-API for demo purposes that returns a JSON array of objects
-const apiUrl = "https://my.api.smockaroo.com/animals.json?key=d9ddfc40" // the api we will call
+const apiUrl = "https://my.api.mockaroo.com/animals.json?key=d9ddfc40" // the api we will call
 
 // an immediately-invoked function expression to run our program immediately
 ;(async () => {
@@ -30,3 +30,7 @@ const apiUrl = "https://my.api.smockaroo.com/animals.json?key=d9ddfc40" // the a
     console.log(`failure: ${err}`)
   }
 })()
+
+for (let i = 0; i < 10; i++) {
+  console.log(i)
+}
