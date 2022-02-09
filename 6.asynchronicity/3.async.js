@@ -14,3 +14,5 @@ doSomething()
     // doSomething ran unsuccessfully
     console.log(`failure!: ${err}`)
   })
+
+console.log("This will print before the doSomething() function completes.")
