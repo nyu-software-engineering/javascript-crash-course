@@ -7,7 +7,7 @@ commit_message=$(cat .git/COMMIT_EDITMSG)
 
 # Check if the commit message contains one or more line breaks
 if [[ "$commit_message" == *$'\n'* ]]; then
-    echo "Multi-line commit messages are forbidden.  Try again with a single-line commit message."
+    echo "Multi-line commit messages are forbidden.  Try with a single-line commit message."
     exit 1
 fi
 
