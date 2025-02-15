@@ -3,7 +3,7 @@
 # Public: Current API version in format "x.y.z".
 export API_VERSION="1.0.0"
 
-# Public: Execute commands in debug mode.
+# Public: git commit hook to reject multi-line commit messages.
 #
 # Checks whether git commit message is a single line or multiline and rejects multi-line commits.
 # git stores commit messages in a temporary file, .git/COMMIT_EDITMSG
@@ -22,5 +22,4 @@ reject_multiline_commit_messages() {
 }
 
 reject_multiline_commit_messages # Exit with error if multi-line message found
-exit 0 # Proceed otherwise
-
+exit 0 # Proceed with commit otherwise
