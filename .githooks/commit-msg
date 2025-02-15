@@ -6,7 +6,7 @@
 commit_msg_file="$1"
 
 # Check if the commit message contains newlines
-if grep -qP '\n.+\S' "$commit_msg_file"; then
+if grep -q '\n.' "$commit_msg_file"; then
     echo "Multi-line commit messages with text after a line break are forbidden. Try again with a single-line commit message." >&2
     exit 1
 fi
