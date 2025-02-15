@@ -1,9 +1,14 @@
 #!/bin/bash
 
+# To activate this commit-msg hook, run the following commands from the main repository directory command shell:
+#   chmod a+x .githooks/commit-msg # make executable
+#   git config core.hooksPath ".githooks" # enable hook
+
 # Public: Current API version in format "x.y.z".
 export API_VERSION="1.0.0"
 
-# Public: git commit hook to reject multi-line commit messages.
+#
+# Public: git commit-msg hook to reject multi-line commit messages.
 #
 # Checks whether git commit message is a single line or multiline and rejects multi-line commits.
 # git stores commit messages in a temporary file, .git/COMMIT_EDITMSG
