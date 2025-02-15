@@ -6,7 +6,7 @@
 commit_message=$(cat .git/COMMIT_EDITMSG)
 
 # Check if the commit message contains newlines
-if [[ "$commit_message" =~ .*\n.*\n.* ]]; then
+if [[ "$commit_message" =~ .*\n.* ]]; then
     echo "Multi-line commit messages are forbidden."
     exit 1
 fi
