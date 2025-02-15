@@ -3,11 +3,11 @@
 # git commit hook that rejects multi-line commit messages
 
 # Read the commit message file
-commit_msg_file="$1"
+commit_message=$(cat .git/COMMIT_EDITMSG)
 
 # Check if the commit message contains newlines
-if grep -q '\(.*\n\)\{2,\}' "$commit_msg_file"; then
-    echo "Multi-line commit messages are forbidden. Try again with a single-line commit message." >&2
+if [[ "$commit_message" =~ .*\n.*\n.* ]]; then
+    echo "Commit message must not contain more than one line break."
     exit 1
 fi
 
