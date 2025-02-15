@@ -1,15 +1,26 @@
 #!/bin/bash
 
-# git commit hook that rejects multi-line commit messages
+# Public: Current API version in format "x.y.z".
+export API_VERSION="1.0.0"
 
-# Read the commit message file
-commit_message=$(cat .git/COMMIT_EDITMSG)
+# Public: Execute commands in debug mode.
+#
+# Checks whether git commit message is a single line or multiline and rejects multi-line commits.
+# git stores commit messages in a temporary file, .git/COMMIT_EDITMSG
+#
+# Exits with error code 1 if multi-line commit message found
 
-# Check if the commit message contains one or more line breaks
-if [[ "$commit_message" == *$'\n'* ]]; then
-    echo "Multi-line commit messages are forbidden.  Try committing again."
-    exit 1
-fi
+reject_multiline_commit_messages() {
+    # Read the commit message temporary file
+    commit_message=$(cat .git/COMMIT_EDITMSG)
 
-# If no newlines are found, the commit is allowed to proceed
-exit 0
+    # Check if the commit message contains one or more line breaks
+    if [[ "$commit_message" == *$'\n'* ]]; then
+        echo "Multi-line commit messages are forbidden.  Try committing again."
+        exit 1
+    fi
+}
+
+reject_multiline_commit_messages # Exit with error if multi-line message found
+exit 0 # Proceed otherwise
+
