@@ -6,7 +6,7 @@ const me = {
   isRobot: false,
   speak: message => {
     console.log(`${this.name} says, "${message}".`)
-  }
+  },
 }
 
 // make a copy of an object - this is prototypal inheritance

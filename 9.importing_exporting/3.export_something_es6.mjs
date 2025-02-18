@@ -15,7 +15,7 @@ const bar = () => {
 }
 
 const baz = {
-  favoriteFood: 'plov'
+  favoriteFood: 'plov',
 }
 
 const bum = true

@@ -1,5 +1,5 @@
 // a function can be used as an object constructor
-function Dog (name, breed) {
+function Dog(name, breed) {
   this.name = name
   this.breed = breed
   this.bark = message => {

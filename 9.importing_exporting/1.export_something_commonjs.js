@@ -7,7 +7,7 @@ const bar = () => {
 }
 
 const baz = {
-  favoriteFood: 'plov'
+  favoriteFood: 'plov',
 }
 
 // export these all to make them available for import into another Javscript file
