@@ -5,10 +5,10 @@
       npm install
 **/
 
-const axios = require("axios") // import axios module
+const axios = require('axios') // import axios module
 
 // a mock-API for demo purposes that returns a JSON array of objects
-const apiUrl = "https://my.api.mockaroo.com/animals.json?key=d9ddfc40" // the api we will call
+const apiUrl = 'https://my.api.mockaroo.com/animals.json?key=d9ddfc40' // the api we will call
 
 // an immediately-invoked function expression to run our program immediately
 ;(async () => {

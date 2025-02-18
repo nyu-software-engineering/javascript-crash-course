@@ -1,0 +1,23 @@
+{
+  "name": "Javascript crash course for programmers",
+  "version": "1.0.0",
+  "description": "A quick dive into Javascript/Ecmascript for programmers of other languages.",
+  "main": "1.basics/1.let_example.js",
+  "scripts": {
+    "test": "standard && echo \"Hello world!\" && exit 1"
+  },
+  "author": "Foo Barstein",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "standard": {
+    "ignore": [
+      "1.basics/1.let_example.js",
+      "1.basics/7.semi_colons.js"
+    ]
+  }
+}

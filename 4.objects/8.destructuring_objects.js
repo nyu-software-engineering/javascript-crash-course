@@ -1,13 +1,13 @@
 const person = {
   age: 72,
-  name: "Foo Barstein",
-  email: "fb1258@teleworm.us",
+  name: 'Foo Barstein',
+  email: 'fb1258@teleworm.us',
   address: {
-    street: "92 Rue Jamil Sedki",
-    city: "Beni Brahim",
-    country: "Tunisia",
-    postalCode: 7040,
-  },
+    street: '92 Rue Jamil Sedki',
+    city: 'Beni Brahim',
+    country: 'Tunisia',
+    postalCode: 7040
+  }
 }
 
 // destructure the object and extract only two parts
@@ -22,7 +22,7 @@ console.log(`fullName=${fullName}, apparentAge=${apparentAge}`)
 const {
   email,
   address: {
-    city, // create a variable for this field only
-  },
+    city // create a variable for this field only
+  }
 } = person
 console.log(`email='${email}', city='${city}'`)

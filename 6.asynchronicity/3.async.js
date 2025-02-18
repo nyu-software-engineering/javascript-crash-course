@@ -1,8 +1,8 @@
 const doSomething = async () => {
   const num = Math.random() * 10
-  const allisgood = num > 5 ? true : false
-  if (allisgood) return "number greater than 5!"
-  else throw "number was less than or equal to 5"
+  const allisgood = num > 5
+  if (allisgood) return 'number greater than 5!'
+  else throw 'number was less than or equal to 5'
 }
 
 doSomething()
@@ -15,4 +15,4 @@ doSomething()
     console.log(`failure!: ${err}`)
   })
 
-console.log("This will print before the doSomething() function completes.")
+console.log('This will print before the doSomething() function completes.')

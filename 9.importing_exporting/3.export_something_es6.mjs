@@ -8,14 +8,14 @@
  * ... or the file extension is .mjs instead of .js
  */
 
-const foo = "risotto"
+const foo = 'risotto'
 
 const bar = () => {
-  console.log("paella")
+  console.log('paella')
 }
 
 const baz = {
-  favoriteFood: "plov",
+  favoriteFood: 'plov'
 }
 
 const bum = true

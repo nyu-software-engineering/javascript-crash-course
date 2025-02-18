@@ -4,4 +4,4 @@ const doSomething3 = (x, y) => {
   return msg
 }
 
-console.log(doSomething3("hello", "world")) // call the function and use its return value
+console.log(doSomething3('hello', 'world')) // call the function and use its return value

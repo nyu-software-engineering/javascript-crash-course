@@ -1,13 +1,13 @@
 // how to export something from a module in the CommonJS style
 
-const foo = "risotto"
+const foo = 'risotto'
 
 const bar = () => {
-  console.log("paella")
+  console.log('paella')
 }
 
 const baz = {
-  favoriteFood: "plov",
+  favoriteFood: 'plov'
 }
 
 // export these all to make them available for import into another Javscript file

@@ -10,7 +10,7 @@ const getFive = (callbackSuccess, callbackFailure) => {
 }
 
 // show that we're starting the code
-console.log("Starting")
+console.log('Starting')
 
 // call the function, pass two callback functions to handle its success or failure
 getFive(
@@ -23,4 +23,4 @@ getFive(
 )
 
 // show that we're ending the code
-console.log("Ending")
+console.log('Ending')

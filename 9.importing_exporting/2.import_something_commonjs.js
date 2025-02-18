@@ -1,5 +1,5 @@
 // how to import something from a module in the CommonJS style
-const { foo, bar, baz } = require("./1.export_something_commonjs.js")
+const { foo, bar, baz } = require('./1.export_something_commonjs.js')
 
 // prove that we imported correctly
 

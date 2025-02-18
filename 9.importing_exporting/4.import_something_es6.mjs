@@ -8,7 +8,7 @@
  * ... or the file extension is .mjs instead of .js
  */
 
-import { foo, bar, baz } from "./3.export_something_es6.mjs"
+import { foo, bar, baz } from './3.export_something_es6.mjs'
 
 // prove that we imported correctly
 
